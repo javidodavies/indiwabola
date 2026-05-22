@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #008000;
+  --color-primary-black: #000000;
+  --color-primary-white: #FFFFFF;
+  --color-primary-gold: #FFD700;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Brand colors */
+.bg-primary-green {
+  background-color: #008000;
+}
+
+.bg-primary-black {
+  background-color: #000000;
+}
+
+.bg-primary-white {
+  background-color: #FFFFFF;
+}
+
+.bg-primary-gold {
+  background-color: #FFD700;
+}
+
+.text-primary-green {
+  color: #008000;
+}
+
+.text-primary-black {
+  color: #000000;
+}
+
+.text-primary-white {
+  color: #FFFFFF;
+}
+
+.text-primary-gold {
+  color: #FFD700;
+}
+
+.border-primary-green {
+  border-color: #008000;
+}
+
+.border-primary-black {
+  border-color: #000000;
+}
+
+.border-primary-white {
+  border-color: #FFFFFF;
+}
+
+.border-primary-gold {
+  border-color: #FFD700;
+}

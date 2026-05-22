@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /admin/
+
+# Allow all other content
+Allow: /
+
+# Sitemap location
+Sitemap: https://indiwabola.com/sitemap.xml
